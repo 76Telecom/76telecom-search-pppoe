@@ -1,16 +1,51 @@
 .modal-dialog {
-    min-height: calc(100vh - 60px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: auto;
-    width: 25%;
-    /* height: 20%; */
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  width: 25%;
+  /* height: 20%; */
 }
 
-@media(max-width: 768px) {
-    .modal-dialog {
-        min-height: calc(100vh - 20px);
-        width: 100%;
-    }
+.modal-footer {
+  border-top: 0px solid #e5e5e5;
+  padding: 0px 20px 20px;
+}
+
+#alerta_erro {
+  display: none;
+}
+
+#modal_config {
+  overflow-y: auto;
+}
+
+.container.container-alt {
+  margin-top: 6%;
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    min-height: calc(100vh - 20px);
+    width: 100%;
+  }
+}
+
+#lista {
+  resize: none;
+}
+
+.play {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.col-md-10 {
+  margin-top: 2%;
+}
+
+.pull-right.update {
+  margin-top: 3%;
 }

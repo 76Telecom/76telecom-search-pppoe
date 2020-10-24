@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <div class="container container-alt" style="margin-top: 6%; width:40%;">
+  <div class="container container-alt">
     <form method="post">
       <div class="panel panel-info">
         <div class="panel-heading">
@@ -33,33 +33,27 @@
         </div>
         <div class="panel-body">
           <div class="col-md-10">
-            <textarea style="resize: none; margin-top: 3%;" name="lista" id="lista"
-              placeholder="PROTOCOLO EX: 2020123987" class="form-control" rows="2"></textarea>
+            <textarea name="lista" id="lista" placeholder="PROTOCOLO EX: 2020123987" class="form-control" rows="2"></textarea>
           </div>
-          <div align="center" style="margin-top: 2%;">
-            <button type="button" class="btn btn-primary" id="iniciar" onclick="start();" title="Iniciar"> <i
-                class="fa fa-play"></i></button>
+          <div class="play">
+            <button type="button" class="btn btn-primary" id="iniciar" onclick="start();" title="Iniciar"> <i class="fa fa-play"></i></button>
           </div>
-          <div class="col-md-10" style="margin-top: 2%;" id="aprovados">
-            <span align="center">
-
+          <div class="col-md-10" id="about">
+            <span>
               <span style="font-size: 18px;">Condições necessárias:</span><br />
                   * Utilizar o login do <b>ERP</b>,<br />
                   * Chamado com status em <b>Aberto</b>,<br />
                   * Chamado na fila de <b>ATIVAÇÃO</b> ou <b>ATIVANDO</b>,<br />
                   * Para dobrar a banda, basta ter a mensagem <b>Dobro</b> no chamado.<br />
-
+              </span>
           </div>
-          <div class="pull-right" style="margin-top: 3%; width:35%;">
-            Atualizado em: 13/05/2020
-          </div>
+          <div class="pull-right update" >Atualizado em: 13/05/2020</div>
         </div>
       </div>
     </form>
   </div>
 
-  <div class="modal fade" id="moda_config" role="dialog" data-backdrop="static" style="overflow-y: auto;"
-    data-keyboard="false">
+  <div class="modal fade" id="moda_config" role="dialog" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -81,12 +75,12 @@
                 <input id="pass" type="password" class="form-control" name="pass" placeholder="Senha" />
               </div>
             </div>
-            <div class="modal-body" style="display:none" id="alerta_erro">
+            <div class="modal-body" id="alerta_erro">
               <strong>Ops! </strong> <span id="motivoerro"></span>
             </div>
           </form>
         </div>
-        <div class="modal-footer" style="border-top:0px solid #e5e5e5;padding:0px 20px 20px">
+        <div class="modal-footer">
           <button type="button" data-plugin="ladda" data-style="zoom-in" class="btn btn-primary pull-right"
             onclick="salvarConfig()"><i class="fa fa-save"></i> Salvar</button>
         </div>
@@ -94,12 +88,11 @@
     </div>
   </div>
 
+  <script src="libs/js/jquery.min.js"></script>
+  <script src="libs/js/jquery-ui.js"></script>
+  <script src="libs/js/sweetalert2.all.min.js"></script>
+  <script src="libs/js/data.main.js"></script>
+  <script src="libs/js/bootstrap.min.js"></script>
+  <script src="libs/js/spin.min.js"></script>
+  <script src="libs/js/ladda.min.js"></script>
 </body>
-
-<script src="libs/js/jquery.min.js"></script>
-<script src="libs/js/jquery-ui.js"></script>
-<script src="libs/js/sweetalert2.all.min.js"></script>
-<script src="libs/js/data.main.js"></script>
-<script src="libs/js/bootstrap.min.js"></script>
-<script src="libs/js/spin.min.js"></script>
-<script src="libs/js/ladda.min.js"></script>

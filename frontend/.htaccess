@@ -9,6 +9,7 @@ ErrorDocument 303 "Acesso negado, sem permissao!"
 ErrorDocument 303.0 "Acesso negado, sem permissao!"
 
 Options -Indexes
+
 # Google Speed Optimization
 <IfModule mod_deflate.c>
   AddType image/svg+xml .svg

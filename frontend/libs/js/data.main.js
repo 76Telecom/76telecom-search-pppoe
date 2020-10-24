@@ -7,7 +7,7 @@ $(function(){
     }
 
     $("#btn_minus").click(function() {
-        $("#aprovados").toggle(0, function() {
+        $("#about").toggle(0, function() {
             if ($(this).is(":visible")) {
                 $("#btn_minus").html('<i class="fa fa-minus"> </i>');
             } else {
@@ -18,6 +18,19 @@ $(function(){
 
     Ladda.bind("[data-plugin='ladda']", { timeout: 450 });
 });
+
+
+getConfig = (name) => {
+  return localStorage.getItem(name);
+}
+
+setConfig = (name, value = null) => {
+  if (value === null) {
+      return localStorage.removeItem(name);
+  } else {
+      return localStorage.setItem(name, value);
+  }
+}
 
 notify = (title, msg, icone) => {
     var options = { body: msg, icon: icone, dir: "ltr" };
@@ -64,18 +77,6 @@ setReset = (boolean) => {
     $("#lista").attr("disabled", boolean);
     $("#config").attr("disabled", boolean);
     $("#iniciar").attr("disabled", boolean);
-}
-
-getConfig = (name) => {
-    return localStorage.getItem(name);
-}
-
-setConfig = (name, value = null) => {
-    if (value === null) {
-        return localStorage.removeItem(name);
-    } else {
-        return localStorage.setItem(name, value);
-    }
 }
 
 salvarConfig = () => {
