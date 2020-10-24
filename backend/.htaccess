@@ -1,0 +1,9 @@
+RewriteEngine On
+
+ErrorDocument 404 "Pagina inexistente"
+ErrorDocument 404.0 "Pagina inexistente"
+ErrorDocument 403 "Acesso negado, sem permissao!"
+ErrorDocument 303 "Acesso negado, sem permissao!"
+ErrorDocument 303.0 "Acesso negado, sem permissao!"
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

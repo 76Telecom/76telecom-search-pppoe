@@ -1,0 +1,2 @@
+backend/app/config/*
+!backend/app/config/Config.example.php
