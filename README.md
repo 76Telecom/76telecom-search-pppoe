@@ -4,6 +4,13 @@
 
 <h3 align="center">pPPoE Generator</h3>
 
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/caioagiani/76telecom-search-pppoe">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/caioagiani/76telecom-search-pppoe">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/caioagiani/76telecom-search-pppoe">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/caioagiani/76telecom-search-pppoe">
+</p>
+
 <p align="center">Gerador de pPPoE automático</p>
 
 ## Interface:
